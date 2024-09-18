@@ -25,26 +25,32 @@ export const getBookById = async (req, res) => {
 
 // Controller function to add a new book
 export const addBook = async (req, res) => {
-  const { title, author, description, imageUrl } = req.body;  // Extract data from the request body
+  const { title, isbn, pageCount, publishedDate, thumbnailUrl, shortDescription, longDescription, status, authors, categories } = req.body;  // Extract data from the request body
 
-  // Validate if all necessary fields are present
-  if (!title || !author || !description || !imageUrl) {
-    return res.status(400).json({ message: 'All fields (title, author, description, imageUrl) are required' });
+  // Check if any required field is missing
+  if (!title || !isbn || !pageCount || !publishedDate || !thumbnailUrl || !shortDescription || !longDescription || !status || !authors || !categories) {
+    return res.status(400).json({ message: 'All fields (title, isbn, pageCount, publishedDate, thumbnailUrl, shortDescription, longDescription, status, authors, categories) are required', addedBooks: [] });
   }
 
   try {
     // Create a new book instance
     const newBook = new Book({
       title,
-      author,
-      description,
-      imageUrl
+      isbn,
+      pageCount,
+      publishedDate,
+      thumbnailUrl,
+      shortDescription,
+      longDescription,
+      status,
+      authors,
+      categories
     });
 
     // Save the book to the database
     const savedBook = await newBook.save();
 
-    res.status(201).json(savedBook);  // Return the newly created book
+    res.status(201).json({ addedBooks:savedBook });  // Return the newly created book in an array
   } catch (err) {
     res.status(500).json({ message: 'Server error. Could not add book.', error: err.message });
   }
@@ -62,8 +68,12 @@ export const addMultipleBooks = async (req, res) => {
   try {
     // Insert multiple books in one operation
     const addedBooks = await Book.insertMany(books);
+    
+    // Count the number of added books
+    const count = addedBooks.length;
 
-    res.status(201).json(addedBooks);  // Return the newly added books
+    res.status(201).json({ count, addedBooks });
+
   } catch (err) {
     res.status(500).json({ message: 'Server error. Could not add books.', error: err.message });
   }
