@@ -10,7 +10,7 @@ const bookSchema = new mongoose.Schema({
   longDescription: { type: String, required: true},
   status: { type: String, enum: ['PUBLISH', 'UNPUBLISH', 'MEAP'], required: true },
   authors: [{ type: String, required: true }],
-  categories: [{ type: String, required: true }]
+  categories: { type: Array, required: true }
 });
 
 const Book = mongoose.model('Book', bookSchema);

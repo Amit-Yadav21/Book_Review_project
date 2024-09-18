@@ -4,7 +4,10 @@ import Book from '../models/bookModel.js';
 export const getAllBooks = async (req, res) => {
   try {
     const books = await Book.find();
-    res.json(books);
+
+    // Get the count of all books
+    const count = await Book.countDocuments();
+    res.json({ count, books });
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
@@ -50,7 +53,7 @@ export const addBook = async (req, res) => {
     // Save the book to the database
     const savedBook = await newBook.save();
 
-    res.status(201).json({ addedBooks:savedBook });  // Return the newly created book in an array
+    res.status(201).json({ addedBooks: savedBook });  // Return the newly created book in an array
   } catch (err) {
     res.status(500).json({ message: 'Server error. Could not add book.', error: err.message });
   }
@@ -68,7 +71,7 @@ export const addMultipleBooks = async (req, res) => {
   try {
     // Insert multiple books in one operation
     const addedBooks = await Book.insertMany(books);
-    
+
     // Count the number of added books
     const count = addedBooks.length;
 
