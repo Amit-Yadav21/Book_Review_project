@@ -90,7 +90,6 @@ A web application that allows users to manage and review books. Built with Node.
         "authors": ["string"], 
         "categories": ["string"] 
       },
-      ...
     ]
     ```
 
