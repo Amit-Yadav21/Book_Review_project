@@ -39,59 +39,56 @@ A web application that allows users to manage and review books. Built with Node.
 
 - **Purpose**: Lists the technologies and tools used to build the project, both on the frontend and backend.
 
-### 5. **API Endpoints**
+### 5. API Endpoints
 
-```markdown
-
-### Book Routes
+#### Book Routes
 
 1. Get all books
-  - `GET localhost:5000/getAllBooks`
+   - `GET localhost:5000/getAllBooks`
 
 2. Get books with pagination
-  - `GET localhost:5000/getAllBooksPagination?page?page=1&limit=10&sortBy=title&sortOrder=asc`
+   - `GET localhost:5000/getAllBooksPagination?page?page=1&limit=10&sortBy=title&sortOrder=asc`
 
 3. Get a book by ID
-  - `GET localhost:5000/getBy/:id`
+   - `GET localhost:5000/getBy/:id`
 
 4. Add a single book
-  - `POST localhost:5000/addSingleBooks`
-  - Request body: 
-    ```json
-    { 
-      "title": "string", 
-      "isbn": "string", 
-      "pageCount": number, 
-      "publishedDate": "string", 
-      "thumbnailUrl": "string", 
-      "shortDescription": "string", 
-      "longDescription": "string", 
-      "status": "string", 
-      "authors": ["string"], 
-      "categories": ["string"] 
-    }
-    ```
+   - `POST localhost:5000/addSingleBooks`
+   - Request body: 
+     ```json
+     { 
+       "title": "string", 
+       "isbn": "string", 
+       "pageCount": number, 
+       "publishedDate": "string", 
+       "thumbnailUrl": "string", 
+       "shortDescription": "string", 
+       "longDescription": "string", 
+       "status": "string", 
+       "authors": ["string"], 
+       "categories": ["string"] 
+     }
+     ```
 
-5. multiple books
-  - `POST /addMultipleBooks`
-  - Request body: 
-    ```json
-    [
-      { 
-        "title": "string", 
-        "isbn": "string", 
-        "pageCount": number, 
-        "publishedDate": "string", 
-        "thumbnailUrl": "string", 
-        "shortDescription": "string", 
-        "longDescription": "string", 
-        "status": "string", 
-        "authors": ["string"], 
-        "categories": ["string"] 
-      },
-    ]
-    ```
-```
+5. Add multiple books
+   - `POST localhost:5000/addMultipleBooks`
+   - Request body: 
+     ```json
+     [
+       { 
+         "title": "string", 
+         "isbn": "string", 
+         "pageCount": number, 
+         "publishedDate": "string", 
+         "thumbnailUrl": "string", 
+         "shortDescription": "string", 
+         "longDescription": "string", 
+         "status": "string", 
+         "authors": ["string"], 
+         "categories": ["string"] 
+       }
+     ]
+     ```
 
 ```markdown
 ### Review Routes
