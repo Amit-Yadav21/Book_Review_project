@@ -42,21 +42,20 @@ A web application that allows users to manage and review books. Built with Node.
 ### 5. **API Endpoints**
 
 ```markdown
-## API Endpoints
 
 ### Book Routes
 
 - **Get all books**
-  - `GET /getAllBooks`
+  - `GET localhost:5000/getAllBooks`
 
 - **Get books with pagination**
-  - `GET /getAllBooksPagination?page=<page>&limit=<limit>&sortBy=<field>&sortOrder=<asc|desc>`
+  - `GET localhost:5000/getAllBooksPagination?page?page=1&limit=10&sortBy=title&sortOrder=asc`
 
 - **Get a book by ID**
-  - `GET /getBy/:id`
+  - `GET localhost:5000/getBy/:id`
 
 - **Add a single book**
-  - `POST /addSingleBooks`
+  - `POST localhost:5000/addSingleBooks`
   - Request body: 
     ```json
     { 
@@ -90,16 +89,17 @@ A web application that allows users to manage and review books. Built with Node.
         "authors": ["string"], 
         "categories": ["string"] 
       },
+      ...
     ]
     ```
 
 ### Review Routes
 
 - **Get reviews for a book**
-  - `GET /:id/reviews`
+  - `GET localhost:5000/:id/reviews`
 
 - **Submit a review for a book**
-  - `POST /:id/reviews`
+  - `POST localhost:5000/:id/reviews`
   - Request body: 
     ```json
     { 
