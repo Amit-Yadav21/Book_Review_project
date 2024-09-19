@@ -19,7 +19,7 @@ export const getAllBooksPagination = async (req, res) => {
   try {
     // Set default values for page and limit if not provided in the query
     const page = parseInt(req.query.page) || 1;
-    const limit = parseInt(req.query.limit) || 10;
+    const limit = parseInt(req.query.limit) || 2;
 
     // Calculate the number of documents to skip
     const skip = (page - 1) * limit;
@@ -28,12 +28,12 @@ export const getAllBooksPagination = async (req, res) => {
     const books = await Book.find().skip(skip).limit(limit);
 
     // Get the total count of books
-    const count = await Book.countDocuments();
+    const totalBooks = await Book.countDocuments();
 
     // Send the paginated response
     res.json({
-      count,
-      totalPages: Math.ceil(count / limit),
+      totalBooks,
+      totalPages: Math.ceil(totalBooks / limit),
       currentPage: page,
       books
     });
