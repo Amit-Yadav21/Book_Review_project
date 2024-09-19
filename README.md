@@ -89,7 +89,6 @@ A web application that allows users to manage and review books. Built with Node.
         "authors": ["string"], 
         "categories": ["string"] 
       },
-      ...
     ]
     ```
 ```
@@ -97,18 +96,22 @@ A web application that allows users to manage and review books. Built with Node.
 ```markdown
 ### Review Routes
 
-1. **Get reviews for a book**
-  - `GET localhost:5000/:id/reviews`
+### Review Routes
 
-2. **Submit a review for a book**
-  - `POST localhost:5000/:id/reviews`
-  - Request body: 
-    ```json
-    { 
-      "rating": number, 
-      "comment": "string" 
-    }
-    ```
+#### 1. Get reviews for a book
+- `GET /:id/reviews`
+- Example: `GET localhost:5000/:id/reviews`
+
+#### 2. Submit a review for a book
+- `POST /:id/reviews`
+- Example: `POST localhost:5000/:id/reviews`
+- Request body:
+  ```json
+  { 
+    "rating": number, 
+    "comment": "string" 
+  }
+
 ```
 
 - **Purpose**: Describes the API endpoints provided by your application, including the routes, HTTP methods, and required request bodies. This helps users understand how to interact with your API.
