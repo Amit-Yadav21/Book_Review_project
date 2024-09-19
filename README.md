@@ -29,12 +29,12 @@ A web application that allows users to manage and review books. Built with Node.
 ### 4. **Technologies Used**
 
 ```markdown
-## Technologies Used
+## **Technologies Used**
 
-- **Frontend**: React (not included in this repository)
-- **Backend**: Node.js, Express
-- **Database**: MongoDB
-- **Others**: Mongoose, CORS
+- Frontend: React (not included in this repository)
+- Backend: Node.js, Express
+- Database: MongoDB
+- Others: Mongoose, CORS
 ```
 
 - **Purpose**: Lists the technologies and tools used to build the project, both on the frontend and backend.
