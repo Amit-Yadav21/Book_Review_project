@@ -72,7 +72,7 @@ A web application that allows users to manage and review books. Built with Node.
     }
     ```
 
-5. Add multiple books
+5. multiple books
   - `POST /addMultipleBooks`
   - Request body: 
     ```json
@@ -94,8 +94,6 @@ A web application that allows users to manage and review books. Built with Node.
 ```
 
 ```markdown
-### Review Routes
-
 ### Review Routes
 
 1. Get reviews for a book
