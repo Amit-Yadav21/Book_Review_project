@@ -20,12 +20,15 @@ export const getAllBooksPagination = async (req, res) => {
     // Set default values for page and limit if not provided in the query
     const page = parseInt(req.query.page) || 1;
     const limit = parseInt(req.query.limit) || 2;
+    const sortBy = req.query.sortBy || 'title'; // Default sort by title
+    const sortOrder = req.query.sortOrder === 'desc' ? -1 : 1; // Default ascending
+
 
     // Calculate the number of documents to skip
     const skip = (page - 1) * limit;
 
     // Fetch the books with pagination
-    const books = await Book.find().skip(skip).limit(limit);
+    const books = await Book.find().skip(skip).limit(limit).sort({ [sortBy]: sortOrder });
 
     // Get the total count of books
     const totalBooks = await Book.countDocuments();
