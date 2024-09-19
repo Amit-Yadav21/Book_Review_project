@@ -1,8 +1,12 @@
+<div align="center">
 | Sl.No|  Questions       |
 |------|------------------|
-| 01. |[Project Title?](#1-project-title)|
-| 02. |[What is Node.js?](#q-what-is-nodejs)|
-| 03. |[Description?](#2-description)|
+| 01. |[Project Title](#1-project-title)|
+| 02. |[Description](#2-description)|
+| 03. |[Features](#3-features)|
+| 04. |[Technologies Used](#4-technologies-used)|
+| 05. |[API Endpoints](#5-API-endpoints)|
+</div>
 
 
 ### 1. **Project Title**
@@ -37,6 +41,10 @@ A web application that allows users to manage and review books. Built with Node.
   - `CORS (Cross-Origin Resource Sharing)` allows the React frontend (where users interact with the website) to communicate with the Node.js backend, even when they are on different servers. As a security feature, CORS ensures that the frontend can safely send and receive data (such as book reviews) from the backend.
 ```
 - **Purpose** : Lists the technologies and tools used to build the project, both on the frontend and backend.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ### 5. API Endpoints
 #### Book Routes
@@ -102,10 +110,6 @@ A web application that allows users to manage and review books. Built with Node.
   }
 
 - **Purpose**: Describes the API endpoints provided by your application, including the routes, HTTP methods, and required request bodies. This helps users understand how to interact with your API.
-
-## Q. ***What is Node.js?***
-
-Node.js is an open-source server side runtime environment built on Chrome\'s V8 JavaScript engine. It provides an event driven, non-blocking (asynchronous) I/O and cross-platform runtime environment for building highly scalable server-side applications using JavaScript.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
