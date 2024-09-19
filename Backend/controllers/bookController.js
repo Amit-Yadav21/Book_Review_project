@@ -6,8 +6,8 @@ export const getAllBooks = async (req, res) => {
     const books = await Book.find();
 
     // Get the count of all books
-    const count = await Book.countDocuments();
-    res.json({ count, books });
+    const totalBooks = await Book.countDocuments();
+    res.json({ totalBooks, books });
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
