@@ -76,7 +76,8 @@ A web application that allows users to manage and review books. Built with Node.
          "status": "string", 
          "authors": ["string"], 
          "categories": ["string"] 
-       }
+       },
+       ...
      ]
      ```
 
@@ -84,7 +85,7 @@ A web application that allows users to manage and review books. Built with Node.
 1. Get reviews for a book
 - `GET` `localhost:5000/:id/reviews`
 
-1. Submit a review for a book
+2. Submit a review for a book
 - `POST` `localhost:5000/:id/reviews`
 - Request body:
   ```json
