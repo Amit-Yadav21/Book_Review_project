@@ -1,10 +1,13 @@
 import express from 'express';
-import { getAllBooks, getBookById, addBook, addMultipleBooks } from '../controllers/bookController.js';
+import { getAllBooks, getAllBooksPagination, getBookById, addBook, addMultipleBooks } from '../controllers/bookController.js';
 
 const router = express.Router();
 
 // Route to get all books
 router.get('/getAllBooks', getAllBooks);
+
+// Route to get all books with pagination
+router.get('/getAllBooksPagination', getAllBooksPagination);
 
 // Route to get a specific book by ID
 router.get('/getBy/:id', getBookById);
