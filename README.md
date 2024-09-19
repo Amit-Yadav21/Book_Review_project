@@ -19,9 +19,9 @@ A web application that allows users to manage and review books. Built with Node.
 ```markdown
 ## Features
 
-- **Book Management**: Add, retrieve, and paginate through books.
-- **Review System**: Submit and view reviews for books.
-- **Pagination**: Retrieve books with pagination and sorting options.
+- Book Management: Add, retrieve, and paginate through books.
+- Review System: Submit and view reviews for books.
+- Pagination: Retrieve books with pagination and sorting options.
 ```
 
 - **Purpose**: Highlights the main features of the application to give users an idea of what they can do with the app.
@@ -29,7 +29,7 @@ A web application that allows users to manage and review books. Built with Node.
 ### 4. **Technologies Used**
 
 ```markdown
-## **Technologies Used**
+## Technologies Used
 
 - Frontend: React (not included in this repository)
 - Backend: Node.js, Express
@@ -90,7 +90,6 @@ A web application that allows users to manage and review books. Built with Node.
         "authors": ["string"], 
         "categories": ["string"] 
       },
-      ...
     ]
     ```
 
