@@ -57,11 +57,42 @@ A web application that allows users to manage and review books. Built with Node.
 
 - **Add a single book**
   - `POST /addSingleBooks`
-  - Request body: `{ "title": "string", "isbn": "string", "pageCount": number, "publishedDate": "string", "thumbnailUrl": "string", "shortDescription": "string", "longDescription": "string", "status": "string", "authors": ["string"], "categories": ["string"] }`
+  - Request body: 
+    ```json
+    { 
+      "title": "string", 
+      "isbn": "string", 
+      "pageCount": number, 
+      "publishedDate": "string", 
+      "thumbnailUrl": "string", 
+      "shortDescription": "string", 
+      "longDescription": "string", 
+      "status": "string", 
+      "authors": ["string"], 
+      "categories": ["string"] 
+    }
+    ```
 
 - **Add multiple books**
   - `POST /addMultipleBooks`
-  - Request body: `[{ "title": "string", "isbn": "string", "pageCount": number, "publishedDate": "string", "thumbnailUrl": "string", "shortDescription": "string", "longDescription": "string", "status": "string", "authors": ["string"], "categories": ["string"] }, ...]`
+  - Request body: 
+    ```json
+    [
+      { 
+        "title": "string", 
+        "isbn": "string", 
+        "pageCount": number, 
+        "publishedDate": "string", 
+        "thumbnailUrl": "string", 
+        "shortDescription": "string", 
+        "longDescription": "string", 
+        "status": "string", 
+        "authors": ["string"], 
+        "categories": ["string"] 
+      },
+      ...
+    ]
+    ```
 
 ### Review Routes
 
@@ -70,7 +101,13 @@ A web application that allows users to manage and review books. Built with Node.
 
 - **Submit a review for a book**
   - `POST /:id/reviews`
-  - Request body: `{ "rating": number, "comment": "string" }`
+    - Request body: 
+    ```json
+    { 
+      "rating": number, 
+      "comment": "string" 
+    }
+    ```
 ```
 
 - **Purpose**: Describes the API endpoints provided by your application, including the routes, HTTP methods, and required request bodies. This helps users understand how to interact with your API.
