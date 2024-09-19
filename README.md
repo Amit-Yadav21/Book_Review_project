@@ -11,7 +11,6 @@ A web application that allows users to manage and review books. Built with Node.
 - **Purpose**: Briefly explains what the project does and lists the main technologies used.
 
 ### 3. **Features**
-## Features
 - **Book Management** : Add, retrieve, and paginate through books.
 - **Review System** : Submit and view reviews for books.
 - **Pagination** : Retrieve books with pagination and sorting options.
@@ -20,15 +19,15 @@ A web application that allows users to manage and review books. Built with Node.
 ### 4. **Technologies Used**
 ```markdown
 - Frontend
-  - `React` is a popular JavaScript library for building user interfaces, especially for single-page applications. It allows developers to create reusable UI components, manage state efficiently, and handle dynamic data updates.
+  - **`React`** is a popular JavaScript library for building user interfaces, especially for single-page applications. It allows developers to create reusable UI components, manage state efficiently, and handle dynamic data updates.
 - Backend
-  - `Node.js` is a runtime environment for running JavaScript on the server-side, known for its event-driven, non-blocking architecture, which is ideal for scalable web applications.
-  - `Express` is a framework for Node.js that makes it easier to build web applications and APIs. It provides tools to handle routes, requests, and responses, simplifying the process of setting up and managing your server.
+  - **`Node.js`** is a runtime environment for running JavaScript on the server-side, known for its event-driven, non-blocking architecture, which is ideal for scalable web applications.
+  - **`Express`** is a framework for Node.js that makes it easier to build web applications and APIs. It provides tools to handle routes, requests, and responses, simplifying the process of setting up and managing your server.
 - Database
-  - `MongoDB` is a NoSQL, document-oriented database that stores data in flexible, JSON-like documents.
+  - **`MongoDB`** is a NoSQL, document-oriented database that stores data in flexible, JSON-like documents.
 - Others
-  - `Mongoose` is a MongoDB object modeling tool for Node.js that provides a schema-based solution for managing and validating data. It is used to define schemas for books and reviews and handle database operations.
-  - `CORS (Cross-Origin Resource Sharing)` allows the React frontend (where users interact with the website) to communicate with the Node.js backend, even when they are on different servers. As a security feature, CORS ensures that the frontend can safely send and receive data (such as book reviews) from the backend.
+  - **`Mongoose`** is a MongoDB object modeling tool for Node.js that provides a schema-based solution for managing and validating data. It is used to define schemas for books and reviews and handle database operations.
+  - **`CORS (Cross-Origin Resource Sharing)`** allows the React frontend (where users interact with the website) to communicate with the Node.js backend, even when they are on different servers. As a security feature, CORS ensures that the frontend can safely send and receive data (such as book reviews) from the backend.
 ```
 - **Purpose** : Lists the technologies and tools used to build the project, both on the frontend and backend.
 
