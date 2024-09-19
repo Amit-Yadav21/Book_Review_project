@@ -1,3 +1,9 @@
+| Sl.No|  Questions       |
+|------|------------------|
+| 01. |[What does the runtime environment mean in Node.js?](#q-what-does-the-runtime-environment-mean-in-nodejs)|
+| 02. |[What is Node.js?](#q-what-is-nodejs)|
+
+
 ### 1. **Project Title**
 ```markdown
 # Book Review Web App
@@ -95,3 +101,11 @@ A web application that allows users to manage and review books. Built with Node.
   }
 
 - **Purpose**: Describes the API endpoints provided by your application, including the routes, HTTP methods, and required request bodies. This helps users understand how to interact with your API.
+
+## Q. ***What is Node.js?***
+
+Node.js is an open-source server side runtime environment built on Chrome\'s V8 JavaScript engine. It provides an event driven, non-blocking (asynchronous) I/O and cross-platform runtime environment for building highly scalable server-side applications using JavaScript.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
