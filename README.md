@@ -19,18 +19,19 @@ A web application that allows users to manage and review books. Built with Node.
 
 ### 4. **Technologies Used**
 ```markdown
-- **Frontend** 
+- Frontend
   - `React` is a popular JavaScript library for building user interfaces, especially for single-page applications. It allows developers to create reusable UI components, manage state efficiently, and handle dynamic data updates.
-- **Backend**
+- Backend
   - `Node.js` is a runtime environment for running JavaScript on the server-side, known for its event-driven, non-blocking architecture, which is ideal for scalable web applications.
   - `Express` is a framework for Node.js that makes it easier to build web applications and APIs. It provides tools to handle routes, requests, and responses, simplifying the process of setting up and managing your server.
-- **Database** 
+- Database
   - `MongoDB` is a NoSQL, document-oriented database that stores data in flexible, JSON-like documents.
-- **Others** 
+- Others
   - `Mongoose` is a MongoDB object modeling tool for Node.js that provides a schema-based solution for managing and validating data. It is used to define schemas for books and reviews and handle database operations.
   - `CORS (Cross-Origin Resource Sharing)` allows the React frontend (where users interact with the website) to communicate with the Node.js backend, even when they are on different servers. As a security feature, CORS ensures that the frontend can safely send and receive data (such as book reviews) from the backend.
-- **Purpose** : Lists the technologies and tools used to build the project, both on the frontend and backend.
 ```
+- **Purpose** : Lists the technologies and tools used to build the project, both on the frontend and backend.
+
 ### 5. API Endpoints
 #### Book Routes
 1. Get all books
