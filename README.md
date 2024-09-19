@@ -90,6 +90,7 @@ A web application that allows users to manage and review books. Built with Node.
         "authors": ["string"], 
         "categories": ["string"] 
       },
+      ...
     ]
     ```
 
@@ -100,7 +101,7 @@ A web application that allows users to manage and review books. Built with Node.
 
 - **Submit a review for a book**
   - `POST /:id/reviews`
-    - Request body: 
+  - Request body: 
     ```json
     { 
       "rating": number, 
