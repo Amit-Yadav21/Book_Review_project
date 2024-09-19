@@ -28,16 +28,16 @@ A web application that allows users to manage and review books. Built with Node.
 ### 5. API Endpoints
 #### Book Routes
 1. Get all books
-   - `GET localhost:5000/getAllBooks`
+   - `GET` `localhost:5000/getAllBooks`
 
 2. Get books with pagination
-   - `GET localhost:5000/getAllBooksPagination?page?page=1&limit=10&sortBy=title&sortOrder=asc`
+   - `GET` `localhost:5000/getAllBooksPagination?page?page=1&limit=10&sortBy=title&sortOrder=asc`
 
 3. Get a book by ID
-   - `GET localhost:5000/getBy/:id`
+   - `GET` `localhost:5000/getBy/:id`
 
 4. Add a single book
-   - `POST localhost:5000/addSingleBooks`
+   - `POST` `localhost:5000/addSingleBooks`
    - Request body: 
      ```json
      { 
@@ -55,7 +55,7 @@ A web application that allows users to manage and review books. Built with Node.
      ```
 
 5. Add multiple books
-   - `POST localhost:5000/addMultipleBooks`
+   - `POST` `localhost:5000/addMultipleBooks`
    - Request body: 
      ```json
      [
@@ -76,12 +76,10 @@ A web application that allows users to manage and review books. Built with Node.
 
 ### Review Routes
 1. Get reviews for a book
-- `GET /:id/reviews`
-- Example: `GET localhost:5000/:id/reviews`
+- `GET` `localhost:5000/:id/reviews`
 
-2. Submit a review for a book
-- `POST /:id/reviews`
-- Example: `POST localhost:5000/:id/reviews`
+1. Submit a review for a book
+- `POST` `localhost:5000/:id/reviews`
 - Request body:
   ```json
   { 
