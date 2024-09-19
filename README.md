@@ -12,18 +12,18 @@ A web application that allows users to manage and review books. Built with Node.
 
 ### 3. **Features**
 ## Features
-- Book Management: Add, retrieve, and paginate through books.
-- Review System: Submit and view reviews for books.
-- Pagination: Retrieve books with pagination and sorting options.
-- **Purpose**: Highlights the main features of the application to give users an idea of what they can do with the app.
+- **Book Management** : Add, retrieve, and paginate through books.
+- **Review System** : Submit and view reviews for books.
+- **Pagination** : Retrieve books with pagination and sorting options.
+- **Purpose** : Highlights the main features of the application to give users an idea of what they can do with the app.
 
 ### 4. **Technologies Used**
 ## Technologies Used
-- Frontend: React (not included in this repository)
-- Backend: Node.js, Express
-- Database: MongoDB
-- Others: Mongoose, CORS
-- **Purpose**: Lists the technologies and tools used to build the project, both on the frontend and backend.
+- **Frontend** : `React`
+- **Backend** : `Node.js`, `Express`
+- **Database** : `MongoDB`
+- **Others** : `Mongoose`, `CORS`
+- **Purpose** : Lists the technologies and tools used to build the project, both on the frontend and backend.
 
 ### 5. API Endpoints
 #### Book Routes
