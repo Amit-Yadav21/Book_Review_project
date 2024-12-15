@@ -11,7 +11,7 @@
 </div>
 
 ### 1. **Project Title**
-```markdown
+```bash
 Book Review Web App
 ```
 - **Purpose**: The title of your project. It clearly states what the project is about.
